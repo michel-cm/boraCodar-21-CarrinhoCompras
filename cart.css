@@ -24,16 +24,13 @@ button {
   border: none;
   cursor: pointer;
 }
-button:hover {
-  opacity: 0.9;
-}
 
 body {
   background: var(--color-background-color);
   color: var(--color-text-color-primary);
 }
 
-#app {
+#cart {
   height: 100vh;
   max-width: 428px;
   margin-left: auto;
@@ -45,7 +42,7 @@ body {
 }
 
 /* HEADER */
-header {
+.cart__header {
   font-size: 20px;
   color: var(--color-text-color-secondary);
 
@@ -59,30 +56,30 @@ header {
 }
 
 /* MAIN */
-main {
+.cart__main {
   padding: 32px;
 }
 
 /* FOOTER */
-footer {
+.cart__footer {
   padding: 32px;
   border-top: 1px solid var(--color-stroke-color);
 }
 
-.total {
+.cart__total {
   display: flex;
   justify-content: space-between;
   font-size: 20px;
 }
 
-.cupom {
+.cart__cupom {
   margin-top: 16px;
 
   display: flex;
   justify-content: flex-end;
 
 }
-.cupom button{
+.cart__cupom button{
   color: var(--color-brand-color-light);
 
   display: flex;
@@ -91,4 +88,26 @@ footer {
 
   border: none;
   background: none;
+}
+.cart__cupom button:hover{
+  opacity: 0.9;
+}
+
+.cart__cupom i {
+  font-size: 20px;
+}
+
+.cart__btn-finally {
+  margin-top: 32px;
+  background: var(--color-brand-color);
+  color: var(--color-text-color-primary);
+
+  border: none;
+  font-size: 20px;
+  padding-block: 20px;
+  width: 100%;
+  border-radius: 8px;
+}
+.cart__btn-finally:hover {
+  background: var(--color-brand-color-light);
 }
